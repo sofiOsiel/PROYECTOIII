@@ -1,0 +1,280 @@
+body{
+    
+  background-image: url("Ppp.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+    
+  }
+  
+  nav {
+      position: fixed;
+      /* posicion fija*/
+      height: 80px;
+      /* altura definida */
+      overflow: hidden;
+      top: 0;
+      display: flex;
+      align-items: center;
+      background: #1a1919e6;
+      width: 100%;
+      
+  
+      
+  }
+  header {
+      display: flex;
+      width: 80%;
+      height: 10vh;
+      margin: auto;
+      align-items: center;
+      font-family: Monaco;
+      
+  
+      }
+  .logo {
+      background: url(FONDO.gif)no-repeat 80% 80%;
+      background-size: contain;
+      width: 200px;
+      height: 65px;
+      float: left;
+  }
+  
+  
+  
+  .menu{
+      position: absolute;
+      right: 50px;
+  }
+  /*menu .side_cat {
+      position: absolute;
+      
+  }
+  menu.side_dog{
+      position: absolute; 
+  }*/
+  
+  .menu a{
+      color: rgb(186, 137, 14);
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 30px;
+      transition: color 1s;
+      
+  }
+  
+  .menu a:hover{
+      color: #da2814;
+  }
+  
+  h1.header{
+      background-color: #d3e0ee;
+      border: 5px outset  #f3f2f2;
+  
+  
+  
+  }
+  section{
+    flex: 5;
+      margin-top: 200px;
+  
+  }
+  /* ESTILOS DE LA PAGINA EN GENERAL */
+  p {
+      font-family: 'Italianno', ;
+      padding: 20px;
+      font-size: 18px;
+      text-align: justify;
+      margin: 15px 25px;
+      color: rgb(147, 177, 146);
+  }
+  h2 {
+      font-family: 'Work Sans', sans-serif;
+      margin: 15px 25px;
+  }
+  footer {
+      display: flex;
+      width: 80%;
+      height: 10vh;
+      margin: auto;
+      align-items: center;
+  }
+  /* ESTILOS PARA EL MENU DESPLEGABLE */
+  .btn {
+      display: none;
+      position: absolute;
+      right: 20px;
+  }
+  .btn:hover > span {
+      background-color: #13acac;
+  }
+  .btn span {
+      display: block;
+      margin: 8px;
+      width: 40px;
+      height: 3px;
+      background: rgb(23, 169, 76);
+  }
+  /*redes sociles*/
+  #redes_sociles {
+    float: right;
+    width: 250px;
+    text-align: right;
+    padding-top: 30px;
+  }
+  @media only screen and (max-width: 550px){
+    nav {
+    overflow: visible;
+}
+.menu {
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #f3f0f0e6;
+    overflow: hidden;
+    max-height: 0;
+}
+.menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.btn {
+    display: block;
+    cursor: pointer;
+}
+.show {
+    max-height: 500px;
+}
+}
+/* */
+.container div:hover{
+	border: 2px solid rgba(14, 10, 243, 0.459);
+}
+
+@media only screen and (max-width: 550px){
+        nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #c4a1a1e6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+    .images img{
+        overflow: visible;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    .side_cat, .side_dog {
+        width: 100%; 
+        float: none; 
+    
+            
+    }
+}
+
+
+    /*conntainer */
+    .blogg{
+        
+        display: grid;
+        /*cuanytas columas queremos desplegar*/
+        grid-template-columns: repeat(2, 2fr);
+        /*la distancia en las  columnas  */
+        gap: 4em;
+        /* el maximo de las filas */
+        grid-template-rows: minmax(100px auto);
+        
+-webkit-column-span:all;
+column-span:all;
+break-inside: avoid;
+page-break-inside: avoid;
+
+    }	
+    /* todos los div q estandentro dek container */
+    .blogg div{
+        /*sea de color  */
+        background: #1e1f1f;
+    
+        padding:6px;
+        
+    }
+    /* */
+    .blogg div:hover{
+        border: 2px solid rgba(141, 141, 184, 0.459);
+    }
+    @media only screen and (max-width: 550px)  {
+      #blogg {
+          columns: 1;
+      }
+  }  
+  .grid-item {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    /*la distancia en las  columnas  */
+    gap: 4em;
+    /* el maximo de las filas */
+    grid-template-rows: minmax(100px auto);
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  @media (min-width: 600px) {
+    .wide {
+      grid-column: span 2;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+  }  
+    
+    
+    
+    

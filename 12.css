@@ -1,0 +1,202 @@
+body{
+    
+  background-image: url("Ppp.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   
+  }
+  nav {
+    position: fixed;
+    /* posicion fija*/
+    height: 80px;
+    /* altura definida */
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #1a1919e6;
+    width: 100%;
+}
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-family: Monaco;
+ }
+.logo {
+    background: url(FONDO.gif)no-repeat 80% 80%;
+    background-size: contain;
+    width: 200px;
+    height: 65px;
+    float: left;
+}
+.menu{
+    position: absolute;
+    right: 50px;
+}
+.menu a{
+    color: rgb(186, 137, 14);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+}
+.menu a:hover{
+    color: #da2814;
+}
+h1.header{
+    background-color: #d3e0ee;
+    border: 5px outset  #f3f2f2;
+}
+section{
+    flex: 3;
+      margin-top: 120px;
+  }
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+    font-family: 'Italianno', ;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 25px;
+    color: rgb(147, 177, 146);
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 15px 25px;
+}
+footer {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #5c6464;
+}
+.btn span {
+    display: block;
+    margin: 8px;
+    width: 40px;
+    height: 3px;
+    background: rgb(23, 169, 167);
+}
+/*donaciones*/
+.input[type=text], input[type=email], input[type=number],select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid rgb(170, 134, 43);
+  border-radius: 9px;
+  resize: vertical;
+}
+.input[type=radio] {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid rgb(235, 164, 164);
+  resize: vertical;
+}
+
+.input[type=password] {
+  width: 70%;
+  padding: 15px;
+  border: 1px solid rgb(206, 216, 114);
+  resize: vertical;
+}
+.label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.input[type=submit],  input[type=reset]{
+  background-color: #80d9e1;
+  color: rgb(26, 24, 24);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #6b96a0;
+}
+
+.container12 {
+  max-width: 450px;
+  height: auto;
+
+  border-radius: 5px;
+  
+  margin-top: 100px;
+  padding-bottom: 1rem;
+
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 15px;
+}
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=reset]  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/**/
+@media only screen and (max-width: 550px){
+      nav {
+      overflow: visible;
+  }
+  .menu {
+      width: 100%;
+      right: 0;
+      top: 80px;
+      background: #c4a1a1e6;
+      overflow: hidden;
+      max-height: 0;
+  }
+  .menu a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+  }
+  .btn {
+      display: block;
+      cursor: pointer;
+  }
+  .show {
+      max-height: 500px;
+  }
+  
+  
+}

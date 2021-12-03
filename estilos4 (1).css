@@ -1,0 +1,357 @@
+body{
+    
+background-image: url("Ppp.gif");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+
+  
+}
+
+nav {
+    position: fixed;
+    /* posicion fija*/
+    height: 80px;
+    /* altura definida */
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #1a1919e6;
+    width: 100%;
+    
+
+    
+}
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-family: Monaco;
+    
+
+    }
+.logo {
+    background: url(FONDO.gif)no-repeat 80% 80%;
+    background-size: contain;
+    width: 200px;
+    height: 65px;
+    float: left;
+}
+
+
+
+.menu{
+    position: absolute;
+    right: 50px;
+}
+/*menu .side_cat {
+    position: absolute;
+    
+}
+menu.side_dog{
+    position: absolute; 
+}*/
+
+.menu a{
+    color: rgb(186, 137, 14);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+    
+}
+
+.menu a:hover{
+    color: #da2814;
+}
+
+h1.header{
+    background-color: #d3e0ee;
+    border: 5px outset  #f3f2f2;
+
+
+
+}
+section{
+  flex: 5;
+    margin-top: 200px;
+
+}
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+    font-family: 'Italianno', ;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 25px;
+    color: rgb(147, 177, 146);
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 15px 25px;
+}
+footer {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #13acac;
+}
+.btn span {
+    display: block;
+    margin: 8px;
+    width: 40px;
+    height: 3px;
+    background: rgb(23, 169, 76);
+}
+/*redes sociles*/
+#redes_sociles {
+	float: right;
+	width: 250px;
+	text-align: right;
+	padding-top: 30px;
+}
+/* icons */
+
+.social {
+	color: transparent;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: 15px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 50px auto;
+	text-decoration: none;
+	
+}
+.facebook {
+	background-image: url(icono\ facebook.png);
+}
+.twitter {
+	background-image: url(icono\ twitter.png);
+}
+.youtube {
+	background-image: url(icono\ yootube.jfif);
+}
+/*estilo del carucel de images*/
+.slider{
+    margin: auto;
+    
+    
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+    
+    animation:cambio 20s infinite;
+	animation-direction:alternate;
+    
+
+}
+.images img{
+   height: 400px;
+   width:695px ;
+   transition: all 0.20s ease;
+
+}
+.images input{
+    display: none;
+    
+}
+.dots{
+    /*display: flex;*/
+    justify-content: center;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto, 2fr);
+    /*la distancia en las  columnas  */
+    gap: 4em;
+    /* el maximo de las filas */
+    grid-template-rows: minmax(100px auto);
+
+}
+/*
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border:solid  rgb(189, 150, 77) 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+    background : 600% 600% ; 
+    
+}
+.dots label:hover{background: rgb(14, 14, 13);}*/
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left:-200% ;
+}
+#img4:checked ~ .m4{
+    margin-left:-300% ;
+}
+.side_cat {
+	width: 55%; 
+	float: left; 
+	text-align: center;
+}
+.side_dog {
+	width: 55%; 
+	float: right; 
+	text-align: center;
+}/*
+.t3 {
+	font-family: 'Lato', sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	font-weight:400;
+}
+.t4 {
+	font-family: 'Lato', sans-serif;
+	font-size:22px;
+	text-decoration:none;
+	font-weight:400;*/
+
+@keyframes cambio{
+	0%{margin-left: 0;}
+	20%(margin-left: 0;)
+ 
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+ 
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+ 
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+
+}
+
+
+@media only screen and (max-width: 550px){
+    nav {
+    overflow: visible;
+}
+.menu {
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #f3f0f0e6;
+    overflow: hidden;
+    max-height: 0;
+}
+.menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.btn {
+    display: block;
+    cursor: pointer;
+}
+.show {
+    max-height: 500px;
+}
+}
+/* */
+.container div:hover{
+	border: 2px solid rgba(14, 10, 243, 0.459);
+}
+
+@media only screen and (max-width: 550px){
+        nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #c4a1a1e6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+    .images img{
+        overflow: visible;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    .side_cat, .side_dog {
+        width: 100%; 
+        float: none; 
+    
+            
+    }
+}
+
+
+    /*conntainer */
+    .blogg{
+        
+        display: grid;
+        /*cuanytas columas queremos desplegar*/
+        grid-template-columns: repeat(4, 1fr);
+        /*la distancia en las  columnas  */
+        gap: 4em;
+        /* el maximo de las filas */
+        grid-template-rows: minmax(100px auto);
+    }	
+    /* todos los div q estandentro dek container */
+    .blogg div{
+        /*sea de color  */
+        background: #00c4ba;
+    
+        padding:6px;
+        
+    }
+    /* */
+    .blogg div:hover{
+        border: 2px solid rgba(14, 10, 243, 0.459);
+    }
+    
+    
+    
+    
+    
+    
+   
